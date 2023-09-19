@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <style>
+      *{
+        background-color: aqua;
+      }
+      .input-field input{
+        padding: 2px;
+        margin: 5px;
+      }
+      .name label{
+        margin-right: 70px;
+      }
+      .email label{
+        margin-right: 70px;
+      }
+      .password label{
+        margin-right: 50px;
+      }
+      .phone label{
+        margin-right: 20px;
+      }
+      .zip label{
+        margin-right: 50px;
+      }
+      .about{
+        margin-right: 50px;
+      }
+      .input-field .gen{
+        margin-right: 25px;
+      }
+      .input-field .lan{
+        margin-right: 100px;
+      }
+
+      button[type=submit]{
+        background-color: rgb(24, 3, 255);
+        color: aliceblue;
+        cursor: pointer;
+      }
+      button[type=reset]{
+        background-color: rgb(255, 3, 3);
+        color: aliceblue;
+        cursor: pointer;
+      }
+
+
+    </style>
+</head>
+<body>
+    <section class="registration-page" style="padding: 2px;text-align: center;">
+        <h2>Registration Form</h2>
+
+        <form action="get">
+          <div class="input-field">
+
+            <div class="name">
+              <label for="name">Name:</label>
+              <input type="text" placeholder="Enter your name" required><br>
+            </div>
+
+            <div class="email">
+              <label for="name">Email:</label>
+              <input type="email" placeholder="Enter your Email" required><br>
+            </div>
+
+            <div class="password">
+              <label for="name">Password:</label>
+              <input type="text" placeholder="Enter your Password" required><br>
+            </div>
+
+            <div class="phone">
+              <label for="name">Phone Number:</label>
+              <input type="number" placeholder="Enter your Phone Number" required><br>
+            </div>
+
+            <label for="Gender" class="gen">Gender:</label>
+
+              <label for="Gender">Male:</label>
+              <input type="radio" name="name" value="male">
+              <label for="Gender">Female:</label>
+              <input type="radio" name="name" value="Female">
+              <label for="Gender">Others:</label>
+              <input type="radio" name="name" value="others"><br><br>
+
+          <label for="Language" class="lan">Language:</label>
+          <select name="Language" id="Languages">
+						<option value="Select">Select Language</option>
+            <option value="English">English</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+          </select><br><br>
+
+          <div class="zip">
+            <label for="Language">Zip Code:</label>
+            <input type="number" placeholder="Enter your Zipcode" required><br>
+          </div>
+
+
+					<label for="Language" class="about">About:</label>
+					<textarea name="msg" id="message" cols="20" rows="3"></textarea><br>
+
+        </div>
+
+					<button type="submit">Register</button>
+					<button type="reset">Reset</button>
+        </form>
+    </section>
+    
+</body>
+</html>
